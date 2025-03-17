@@ -3,6 +3,7 @@ import cartSVG from "../../assets/shopping-cart-outline.svg";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import headerLogo from "@/assets/header-logo.png";
 
 function Header() {
   const [categoryMenuOpen, setCategoryMenuOpen] = useState<boolean>(false);
@@ -110,7 +111,7 @@ function Header() {
                 </button>
               </div>
               <div className="text-4xl font-normal font-sans tracking-widest">
-                TESTING.com
+                <img src={headerLogo} className="w-80" alt=""/>
               </div>
               <div className="flex gap-2">
                 <button className="rounded-2xl px-2 py-1 cursor-pointer hover:bg-[#f5f0e6]">
